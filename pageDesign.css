@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-bottom: 58px;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: arial, helvetica, sans-serif;
+}
+input:focus {
+  outline-color: #0639a2;
+}
+  .header {
+    background-color: #041E54;
+    height : 150px;
+    width : 100%;
+    overflow: hidden;
+  }
+  #logo {
+    margin-left : 7%;
+    height : 98%;
+    width : 400px;
+    position: relative;
+    animation: logo 2s ease 0.2s 1 ;
+  }
+  /*logo animations*/
+  @keyframes logo{
+    0%{
+      left:70px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+
+  .main{
+    width: 80%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    padding: 30px 35px;
+  }
+
+    .calculator {
+      width: 100%;
+      text-align:center;
+    }
+
+    .heading{
+      border-bottom : 1.5px solid black;
+      text-align:center;
+      display: inline-block;
+      width:30%;
+      height:auto;
+      font-weight: bold;
+      font-size: 2em;
+      color: #0955a0;
+      word-wrap: break-word;
+      margin : 2%;
+      padding-top: 1%;
+      position: relative;
+      animation:heading 2s ease 0.2s 1 ;
+    }
+    /*heading animations*/
+    @keyframes heading{
+      0%{
+        right:70px;
+        opacity: 0;
+      }
+      100%{
+        right:0px;
+        opacity: 1;
+      }
+    }
+
+    .tablecontainer{
+      display: inline-block;
+      width: 80%;
+      overflow: auto;
+      margin: 2%; 
+      
+      position: relative;
+      animation: tablecontainer 2s ease 0.2s 1 ;
+    }
+    /*tablecontainer animations*/
+    @keyframes tablecontainer{
+      0%{
+        left:70px;
+        opacity: 0;
+      }
+      100%{
+        left:0px;
+        opacity: 1;
+      }
+    }
+    #subjectlen{
+      font-size: 1em;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      border: 1.5px solid rgb(122, 142, 179); 
+      border-radius: 6px;
+    }
+    #subjectlen:hover{
+      border-color: black;
+    }
+    #subjectlen:focus{
+      box-shadow: 0 0 4px 2px rgba(59, 153, 252, .7);
+    }
+    table {
+      width: 40%;
+      border: 4px solid black;
+      border-collapse: collapse;
+      box-shadow: 0 0 13px 1px #041E54;
+      text-align: center;
+      margin-left:auto; /*margins to..*/
+      margin-right:auto; /*..align in center*/
+      overflow: hidden;
+    }
+    td {
+      border: 2.5px solid black;
+      
+    }
+    th{
+      height:2em;
+    }
+    .MandC{
+     font-size: 1.2em;
+    }
+    .subject{
+    font-weight: bold;
+    width: 28%;
+    min-width: 28%;
+    max-width: 28%;
+    
+    }
+    .inputbox{
+      width : 100%;
+      padding:3px;
+      resize: vertical;
+      font-size: 1.5em;
+    }
+
+    .submit{
+      
+      height:auto;
+    }
+    #sub{
+      font-size: 2em;
+      font-weight: bold;
+      color: #0955a0;
+      background-color:#dfe7ee;
+      padding: 3px 20px;
+      text-align: center;
+      border: 2px solid #0955a0;
+      border-radius: 50px;
+      display: inline-block;
+      transition: background-color 500ms ease;
+      
+    }
+    #sub:hover{
+      background-color:#041E54;
+      color: white;
+      transition: color 500ms ease;
+    }
+
+    .answer{
+      background-color:#dfe7ee  ;
+      width: 20%;
+      text-align:center;
+      display: inline-block;
+      word-wrap: break-word;
+      height:auto;
+      margin:2%;
+      font-size: 1.5em;
+      font-weight: 600;
+      color : #0955a0;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #0955a0;
+    }
+
+    .reference{
+     font-size: 1.0em;
+     line-height: 1.5em;
+     font-family: "Times New Roman", Times, serif;
+    }
+   .explanation{
+    margin-top: 4em;
+    font-size: 1em;
+     }
+   .explanation p{
+     margin-top: 1em;/*para spacing*/
+     margin-left:1em;
+     font-size: 1.3em;
+   }
+   h1{
+    color: #0955a0;
+    text-decoration: underline;
+    text-decoration-color: black; 
+   }
+   #equation{
+     width: 30%;
+   }
+   h2{
+    color: #0955a0;
+   }
+   #worksteps {
+     margin-left: 2em;
+     margin-bottom:1em ;
+     line-height: 1.4em;
+     font-size: 1.3em;
+   }
+   .gradepoint{
+     margin-bottom: 2em;
+   }
+   .gradepoint p{
+     font-size:1.2em;
+     margin-top: 0.5em;
+     margin-left:1em;
+   }
+   #gradepoint{
+    font-size: 1em;
+    margin-bottom: 1em;
+    transition: background-color 500ms ease;
+   }
+   #gradepoint p{
+    margin: 0;
+   }
+   table caption{
+     font-size: 1.3em;
+     padding: 2%;
+     font-style: italic;
+   }
+
+   .division{
+     margin-top: 1em;
+   }
+   .division p{
+     margin-top: 0.5em;
+     margin-left: 1em;
+     font-size: 1.1em;
+   }
+   #division {
+    margin-left: 2em;
+    margin-bottom:1em ;
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  #gototop{
+    opacity: 0;
+    text-decoration: none;
+    text-align: center;
+    z-index:99;
+    display:block;
+    position:fixed;
+    height: 50px; line-height: 30px;
+    width: auto;
+    bottom:40px;
+    right: 65px;
+    background-color: #041E54;
+    color:white;
+    font-size: 20px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(43, 42, 42);/*#888888*/
+    transition: opacity .4s;
+  }
+  #gototop::before{
+    content: "\21EA"; 
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+  }
+  #gototop::after{
+    content: "Go To Top";
+  }
+   footer {
+    background-color: #041E54;
+    padding: 35px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+/*Media queries*/
+@media screen and (max-width: 1440px){
+
+  @keyframes logo{
+    0%{
+      left:60px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+  @keyframes heading{
+    0%{
+      right:60px;
+      opacity: 0;
+    }
+    100%{
+      right:0px;
+      opacity: 1;
+    }
+  }
+  @keyframes tablecontainer{
+    0%{
+      left:60px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .heading{
+    width:100%;
+  }
+  @keyframes logo{
+    0%{
+      left:50px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+  @keyframes heading{
+    0%{
+      right:50px;
+      opacity: 0;
+    }
+    100%{
+      right:0px;
+      opacity: 1;
+    }
+  }
+  @keyframes tablecontainer{
+    0%{
+      left:50px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  .heading{
+    width:100%;
+  }
+  @keyframes logo{
+    0%{
+      left:42px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+  #gototop{
+    bottom:30px;
+    right: 43px;
+    height: 50px; line-height: 35px;
+    width: 50px;
+    border-radius: 12px;
+  }
+  #gototop::before{
+    margin:auto 0;
+    content: "^"; 
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 39px;
+    line-height: 45px;
+    color: white;
+  }
+  #gototop::after{
+    display: none;
+  }
+  @keyframes heading{
+    0%{
+      right:42px;
+      opacity: 0;
+    }
+    100%{
+      right:0px;
+      opacity: 1;
+    }
+  }
+  @keyframes tablecontainer{
+    0%{
+      left:42px;
+      opacity: 0;
+    }
+    100%{
+      left:0px;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) { 
+
+   body
+    {
+    background-color: #f1f1f1;
+    } 
+
+    .header{
+      height: 130px;
+    }
+    #logo 
+    {
+        margin-left : 5%;
+        margin-right : 1%;
+        width : 95%;
+        padding : 1px;
+        margin-top : 2%;
+        
+     }
+     .main {
+      width: 98%;
+      margin: 0 auto;
+      padding-top: 8%;
+     }
+     
+    .heading{
+      width:100%;
+      margin-bottom: 7%;
+      padding: 3%;
+      padding-top: 1%;
+    }
+
+    /*Table's responsive code here*/
+    .tablecontainer{
+      width:100%;
+    }
+    table {
+      width: 90%;
+    }
+    .subject{
+      width: 40%;
+      min-width: 40%;
+      max-width: 40%;
+      }
+    .submit{
+      padding:5%;
+    }
+    /*#sub doesnt need any query*/
+
+    .answer{
+      width: 90%;
+    }
+
+    #equation{
+      width: 100%;
+    }
+
+    #gototop{
+      bottom:30px;
+      right: 30px;
+    }
+}
+@media screen and (max-width: 320px){
+  .header{
+    height: 114px;
+  }
+}
+
